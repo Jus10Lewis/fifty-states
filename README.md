@@ -1,1 +1,2 @@
-# fifty-states
+# FiftyStates
+50 States educational app
