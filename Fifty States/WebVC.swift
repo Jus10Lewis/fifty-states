@@ -21,9 +21,7 @@ class WebVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(webView)
-        //FIXME: - fix URLs for broken states
         var urlString = "https://en.wikipedia.org/wiki/" + stateName
-        
         
         switch stateName {
         case "Washington":
@@ -35,8 +33,8 @@ class WebVC: UIViewController {
         default:
             urlString += ""
         }
-        print(urlString)
         urlString = urlString.replacingOccurrences(of: " ", with: "_")
+        
         if let url = URL(string: urlString) {
             webView.load(URLRequest(url: url))
         }

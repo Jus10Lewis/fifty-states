@@ -7,6 +7,7 @@
 //
 
 import AVFoundation
+//import Foundation
 
 
 ///// Plays sound "soundName".mp3
@@ -20,4 +21,19 @@ func playSound (_ soundName: String){
     }
     player.play()
 }
+
+func afterDelay(_ seconds: Double, run: @escaping () -> Void) {
+    DispatchQueue.main.asyncAfter(deadline: .now() + seconds, execute: run)
+}
+
+
+
+let synthesizer = AVSpeechSynthesizer()
+
+func speak(string stringToSpeak: String) {
+    synthesizer.stopSpeaking(at: .immediate)
+    let utterance = AVSpeechUtterance(string: stringToSpeak)
+    synthesizer.speak(utterance)
+}
+
 

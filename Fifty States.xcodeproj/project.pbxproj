@@ -17,8 +17,20 @@
 		0F43D73321FA464F00D10702 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F43D73121FA464F00D10702 /* LaunchScreen.storyboard */; };
 		0F43D73B21FA49EF00D10702 /* StatesListTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43D73A21FA49EF00D10702 /* StatesListTableVC.swift */; };
 		0F43D73D21FA571D00D10702 /* StateInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43D73C21FA571D00D10702 /* StateInfoVC.swift */; };
+		230BB61C228B54C50003F472 /* wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 230BB61B228B54C50003F472 /* wrong.mp3 */; };
 		23191FDC22456F9A00957AAE /* MemoryGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23191FDB22456F9A00957AAE /* MemoryGameVC.swift */; };
+		2319EC13228369BC005DBEDE /* correct.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2319EC12228369BC005DBEDE /* correct.mp3 */; };
+		2319EC1522837079005DBEDE /* win.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2319EC1422837079005DBEDE /* win.mp3 */; };
+		2319EC1722837349005DBEDE /* CardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2319EC1622837349005DBEDE /* CardButton.swift */; };
+		232097622257E69400A7F6FE /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232097612257E69400A7F6FE /* MemoryGame.swift */; };
+		232097642257E6A800A7F6FE /* MemoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232097632257E6A800A7F6FE /* MemoryCard.swift */; };
+		2339D9F322724DF6008B789F /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2339D9F222724DF6008B789F /* MenuButton.swift */; };
+		2339D9F622739504008B789F /* Pictures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2339D9F522739504008B789F /* Pictures.swift */; };
+		2339D9F822739688008B789F /* SubmitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2339D9F722739688008B789F /* SubmitButton.swift */; };
+		2339D9FB22739B39008B789F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2339D9FA22739B39008B789F /* WebKit.framework */; };
+		2339D9FD22739F0B008B789F /* StateTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2339D9FC22739F0B008B789F /* StateTableCell.swift */; };
 		23DAA6992230729000750D8A /* functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DAA6982230729000750D8A /* functions.swift */; };
+		23E30E7D2270F8C1006388E7 /* card-flip.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 23E30E7C2270F8C1006388E7 /* card-flip.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +46,20 @@
 		0F43D73421FA464F00D10702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F43D73A21FA49EF00D10702 /* StatesListTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesListTableVC.swift; sourceTree = "<group>"; };
 		0F43D73C21FA571D00D10702 /* StateInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateInfoVC.swift; sourceTree = "<group>"; };
+		230BB61B228B54C50003F472 /* wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrong.mp3; sourceTree = "<group>"; };
 		23191FDB22456F9A00957AAE /* MemoryGameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameVC.swift; sourceTree = "<group>"; };
+		2319EC12228369BC005DBEDE /* correct.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correct.mp3; sourceTree = "<group>"; };
+		2319EC1422837079005DBEDE /* win.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = win.mp3; sourceTree = "<group>"; };
+		2319EC1622837349005DBEDE /* CardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardButton.swift; sourceTree = "<group>"; };
+		232097612257E69400A7F6FE /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
+		232097632257E6A800A7F6FE /* MemoryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryCard.swift; sourceTree = "<group>"; };
+		2339D9F222724DF6008B789F /* MenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
+		2339D9F522739504008B789F /* Pictures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pictures.swift; sourceTree = "<group>"; };
+		2339D9F722739688008B789F /* SubmitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitButton.swift; sourceTree = "<group>"; };
+		2339D9FA22739B39008B789F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		2339D9FC22739F0B008B789F /* StateTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateTableCell.swift; sourceTree = "<group>"; };
 		23DAA6982230729000750D8A /* functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = functions.swift; sourceTree = "<group>"; };
+		23E30E7C2270F8C1006388E7 /* card-flip.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "card-flip.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2339D9FB22739B39008B789F /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +79,7 @@
 			children = (
 				0F43D72721FA464D00D10702 /* Fifty States */,
 				0F43D72621FA464D00D10702 /* Products */,
+				2339D9F922739B39008B789F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,20 +95,71 @@
 			isa = PBXGroup;
 			children = (
 				0F43D72C21FA464D00D10702 /* Main.storyboard */,
+				232097592257E59A00A7F6FE /* Controllers */,
+				232097602257E67700A7F6FE /* Models */,
+				2339D9F4227394EC008B789F /* Views */,
+				2320975A2257E5AB00A7F6FE /* Supporting Files */,
+			);
+			path = "Fifty States";
+			sourceTree = "<group>";
+		};
+		232097592257E59A00A7F6FE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				23191FDB22456F9A00957AAE /* MemoryGameVC.swift */,
 				0F2720F9222AD90C00F45273 /* SettingsVC.swift */,
 				0F43D72A21FA464D00D10702 /* HomePageVC.swift */,
 				0F43D73A21FA49EF00D10702 /* StatesListTableVC.swift */,
 				0F43D73C21FA571D00D10702 /* StateInfoVC.swift */,
-				0F0AE15722024F400004CA20 /* StateDetails.swift */,
 				0F0AE1592204DACA0004CA20 /* WebVC.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		2320975A2257E5AB00A7F6FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F0AE15722024F400004CA20 /* StateDetails.swift */,
 				0F43D72821FA464D00D10702 /* AppDelegate.swift */,
 				23DAA6982230729000750D8A /* functions.swift */,
 				0F43D72F21FA464F00D10702 /* Assets.xcassets */,
 				0F43D73121FA464F00D10702 /* LaunchScreen.storyboard */,
 				0F43D73421FA464F00D10702 /* Info.plist */,
+				2319EC12228369BC005DBEDE /* correct.mp3 */,
+				230BB61B228B54C50003F472 /* wrong.mp3 */,
+				23E30E7C2270F8C1006388E7 /* card-flip.mp3 */,
+				2319EC1422837079005DBEDE /* win.mp3 */,
 			);
-			path = "Fifty States";
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		232097602257E67700A7F6FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				232097612257E69400A7F6FE /* MemoryGame.swift */,
+				232097632257E6A800A7F6FE /* MemoryCard.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2339D9F4227394EC008B789F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2339D9F522739504008B789F /* Pictures.swift */,
+				2339D9F222724DF6008B789F /* MenuButton.swift */,
+				2339D9F722739688008B789F /* SubmitButton.swift */,
+				2319EC1622837349005DBEDE /* CardButton.swift */,
+				2339D9FC22739F0B008B789F /* StateTableCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		2339D9F922739B39008B789F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2339D9FA22739B39008B789F /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,7 +220,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2319EC13228369BC005DBEDE /* correct.mp3 in Resources */,
 				0F43D73321FA464F00D10702 /* LaunchScreen.storyboard in Resources */,
+				230BB61C228B54C50003F472 /* wrong.mp3 in Resources */,
+				23E30E7D2270F8C1006388E7 /* card-flip.mp3 in Resources */,
+				2319EC1522837079005DBEDE /* win.mp3 in Resources */,
 				0F43D73021FA464F00D10702 /* Assets.xcassets in Resources */,
 				0F43D72E21FA464D00D10702 /* Main.storyboard in Resources */,
 			);
@@ -157,14 +238,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F43D72B21FA464D00D10702 /* HomePageVC.swift in Sources */,
+				2319EC1722837349005DBEDE /* CardButton.swift in Sources */,
 				0F43D72921FA464D00D10702 /* AppDelegate.swift in Sources */,
+				232097622257E69400A7F6FE /* MemoryGame.swift in Sources */,
 				23191FDC22456F9A00957AAE /* MemoryGameVC.swift in Sources */,
 				0F43D73D21FA571D00D10702 /* StateInfoVC.swift in Sources */,
 				23DAA6992230729000750D8A /* functions.swift in Sources */,
 				0F0AE15A2204DACA0004CA20 /* WebVC.swift in Sources */,
+				2339D9F622739504008B789F /* Pictures.swift in Sources */,
+				2339D9F322724DF6008B789F /* MenuButton.swift in Sources */,
+				2339D9FD22739F0B008B789F /* StateTableCell.swift in Sources */,
 				0F2720FA222AD90C00F45273 /* SettingsVC.swift in Sources */,
 				0F43D73B21FA49EF00D10702 /* StatesListTableVC.swift in Sources */,
+				2339D9F822739688008B789F /* SubmitButton.swift in Sources */,
 				0F0AE15822024F400004CA20 /* StateDetails.swift in Sources */,
+				232097642257E6A800A7F6FE /* MemoryCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

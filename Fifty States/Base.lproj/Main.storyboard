@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mvc-71-nII">
-    <device id="retina6_5" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,7 +15,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomePageVC" customModule="Fifty_States" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="50 STATES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYd-F9-T5v">
@@ -26,9 +26,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="Phh-n8-aiA">
-                                <rect key="frame" x="57" y="500" width="300" height="312"/>
+                                <rect key="frame" x="10" y="206" width="300" height="312"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Szv-Gk-cdW">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Szv-Gk-cdW" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="76"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -43,7 +43,7 @@
                                             <segue destination="KhF-R5-NQE" kind="show" id="o5y-d3-5Ey"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQe-iy-pnH">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQe-iy-pnH" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="118" width="300" height="76"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -58,7 +58,7 @@
                                             <segue destination="8SB-OC-p8f" kind="show" id="z3D-Iq-rAA"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSm-B7-XMf">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSm-B7-XMf" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="236" width="300" height="76"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -80,7 +80,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.019671445917486" blue="0.45389821021084853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Phh-n8-aiA" secondAttribute="bottom" constant="50" id="ZAV-7W-nYh"/>
                             <constraint firstItem="Phh-n8-aiA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e47-zo-fTd"/>
@@ -98,24 +98,24 @@
             <objects>
                 <viewController id="8SB-OC-p8f" customClass="SettingsVC" customModule="Fifty_States" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2lJ-Hm-fb6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6SI-K3-lLz">
-                                <rect key="frame" x="103.99999999999999" y="212" width="128.66666666666666" height="133"/>
+                                <rect key="frame" x="104" y="212" width="128.5" height="133"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="8m4-9p-93y">
-                                        <rect key="frame" x="0.0" y="0.0" width="128.66666666666666" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="128.5" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sth-Dg-ua4">
-                                                <rect key="frame" x="0.0" y="0.0" width="47.666666666666664" height="31"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="47.5" height="31"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" tag="101" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P7i-CG-thQ">
-                                                <rect key="frame" x="79.666666666666671" y="0.0" width="51.000000000000014" height="31"/>
+                                                <rect key="frame" x="79.5" y="0.0" width="51" height="31"/>
                                                 <connections>
                                                     <action selector="switchChanged:" destination="8SB-OC-p8f" eventType="valueChanged" id="cij-DV-lVF"/>
                                                 </connections>
@@ -123,16 +123,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="obh-O6-r5X">
-                                        <rect key="frame" x="0.0" y="51" width="122.66666666666667" height="31"/>
+                                        <rect key="frame" x="0.0" y="51" width="122.5" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FLAG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F79-Ng-9Y2">
-                                                <rect key="frame" x="0.0" y="0.0" width="41.666666666666664" height="31"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="41.5" height="31"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oVW-ym-2bd">
-                                                <rect key="frame" x="73.666666666666671" y="0.0" width="51" height="31"/>
+                                                <rect key="frame" x="73.5" y="0.0" width="51" height="31"/>
                                                 <connections>
                                                     <action selector="switchChanged:" destination="8SB-OC-p8f" eventType="valueChanged" id="5Dp-CQ-J5k"/>
                                                 </connections>
@@ -140,16 +140,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="8Iz-Y6-xBj">
-                                        <rect key="frame" x="0.0" y="102" width="119.66666666666667" height="31"/>
+                                        <rect key="frame" x="0.0" y="102" width="119.5" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INFO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hfy-g8-0kM">
-                                                <rect key="frame" x="0.0" y="0.0" width="38.666666666666664" height="31"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="38.5" height="31"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0lQ-Ms-mhb">
-                                                <rect key="frame" x="70.666666666666671" y="0.0" width="51" height="31"/>
+                                                <rect key="frame" x="70.5" y="0.0" width="51" height="31"/>
                                                 <connections>
                                                     <action selector="switchChanged:" destination="8SB-OC-p8f" eventType="valueChanged" id="NYl-0I-LXb"/>
                                                 </connections>
@@ -158,7 +158,7 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" tag="222" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5lW-rP-FCQ">
+                            <button opaque="NO" tag="222" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5lW-rP-FCQ" customClass="SubmitButton" customModule="Fifty_States" customModuleProvider="target">
                                 <rect key="frame" x="116" y="420" width="140" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="LOAD FLASHCARDS"/>
@@ -167,7 +167,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.26834985610000001" green="0.27733594179999999" blue="0.28153231740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.019671445919999999" blue="0.45389821019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="tlz-Uv-mbX"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="TOS-PO-oiy"/>
@@ -182,24 +182,51 @@
             </objects>
             <point key="canvasLocation" x="1857.9710144927537" y="513.61607142857144"/>
         </scene>
-        <!--STATES-->
+        <!--States List TableVC-->
         <scene sceneID="Mq4-0q-GKM">
             <objects>
                 <tableViewController id="KhF-R5-NQE" customClass="StatesListTableVC" customModule="Fifty_States" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ETX-0K-hgQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="sectionIndexBackgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.0" green="0.01470782271" blue="0.33936775340000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StateCell" id="ysa-NQ-qP2">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="StateCell" rowHeight="44" id="ysa-NQ-qP2" customClass="StateTableCell" customModule="Fifty_States" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ysa-NQ-qP2" id="YES-Em-fjl">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="286" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VCr-aF-J8N">
+                                            <rect key="frame" x="20" y="8" width="46.5" height="27.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="27.5" id="3Xr-tb-BxY"/>
+                                                <constraint firstAttribute="width" secondItem="VCr-aF-J8N" secondAttribute="height" multiplier="326:193" id="kh6-YW-KKA"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIU-Oe-Mqg">
+                                            <rect key="frame" x="72" y="9.5" width="41" height="24.5"/>
+                                            <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="hIU-Oe-Mqg" firstAttribute="centerY" secondItem="YES-Em-fjl" secondAttribute="centerY" id="S59-fe-mth"/>
+                                        <constraint firstItem="VCr-aF-J8N" firstAttribute="leading" secondItem="YES-Em-fjl" secondAttribute="leading" constant="20" id="UjK-UX-qCU"/>
+                                        <constraint firstItem="VCr-aF-J8N" firstAttribute="top" secondItem="YES-Em-fjl" secondAttribute="top" constant="8" id="c3k-Uy-eBp"/>
+                                        <constraint firstItem="hIU-Oe-Mqg" firstAttribute="centerY" secondItem="YES-Em-fjl" secondAttribute="centerY" id="iAt-qM-acG"/>
+                                        <constraint firstItem="VCr-aF-J8N" firstAttribute="centerY" secondItem="YES-Em-fjl" secondAttribute="centerY" id="ksl-BJ-ulM"/>
+                                        <constraint firstItem="hIU-Oe-Mqg" firstAttribute="leading" secondItem="VCr-aF-J8N" secondAttribute="trailing" constant="5.5" id="mZk-bd-kzL"/>
+                                    </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.019671445919999999" blue="0.45389821019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="cellLabel" destination="hIU-Oe-Mqg" id="dab-aP-QL3"/>
+                                    <outlet property="flagImage" destination="VCr-aF-J8N" id="F4W-eW-ayC"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -207,74 +234,103 @@
                             <outlet property="delegate" destination="KhF-R5-NQE" id="zdZ-wA-obB"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="STATES" id="PvR-V3-p1h"/>
                     <connections>
                         <segue destination="sVz-Dl-DgH" kind="show" identifier="ShowState" id="Tzc-CY-Nwy"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MRv-Rg-zkh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1858" y="-194"/>
+            <point key="canvasLocation" x="1857.9710144927537" y="-194.19642857142856"/>
         </scene>
         <!--STATE-->
         <scene sceneID="VdY-IW-zU6">
             <objects>
                 <viewController id="sVz-Dl-DgH" customClass="StateInfoVC" customModule="Fifty_States" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ppA-XA-l5L">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="State Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxb-eQ-9bY">
-                                <rect key="frame" x="55" y="103" width="316" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="State Abbreviation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56D-pK-Ko9">
-                                <rect key="frame" x="55" y="163" width="316" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="State Bird" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QdU-mg-r3Z">
-                                <rect key="frame" x="55" y="475" width="316" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="State Capital" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BzE-7o-4V3">
-                                <rect key="frame" x="55" y="415" width="316" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="State Flower" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0C-vL-Kuo">
-                                <rect key="frame" x="55" y="692" width="316" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O3q-sa-05A">
-                                <rect key="frame" x="55" y="223" width="316" height="193"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gIO-Sv-acF">
-                                <rect key="frame" x="55" y="535" width="158" height="158"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ncP-fv-0RE">
-                                <rect key="frame" x="213" y="535" width="158" height="158"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7uE-OQ-WGP">
+                                <rect key="frame" x="44" y="79" width="454" height="389"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxb-eQ-9bY">
+                                        <rect key="frame" x="0.0" y="0.0" width="454" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="State Abbreviation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56D-pK-Ko9">
+                                        <rect key="frame" x="0.0" y="20" width="454" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="753" translatesAutoresizingMaskIntoConstraints="NO" id="O3q-sa-05A">
+                                        <rect key="frame" x="0.0" y="40" width="454" height="249"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="O3q-sa-05A" secondAttribute="height" multiplier="425:233" id="9lb-zR-XjO"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State Capital" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BzE-7o-4V3">
+                                        <rect key="frame" x="0.0" y="309" width="454" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LU2-bU-C9B" userLabel="Pic Stack">
+                                        <rect key="frame" x="0.0" y="329" width="454" height="0.0"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gIO-Sv-acF" customClass="Pictures" customModule="Fifty_States" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="220" height="0.0"/>
+                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="gIO-Sv-acF" secondAttribute="height" multiplier="1:1" id="RPi-pO-UcC"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ncP-fv-0RE" customClass="Pictures" customModule="Fifty_States" customModuleProvider="target">
+                                                <rect key="frame" x="230" y="0.0" width="224" height="0.0"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="ncP-fv-0RE" secondAttribute="height" multiplier="1:1" id="rJi-zW-XMI"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="8eb-GI-ov1" userLabel="Label Stack">
+                                        <rect key="frame" x="0.0" y="349" width="454" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State Bird" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QdU-mg-r3Z">
+                                                <rect key="frame" x="0.0" y="10" width="212" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State Flower" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0C-vL-Kuo">
+                                                <rect key="frame" x="242" y="10" width="212" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="8zZ-c1-f0k"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="LU2-bU-C9B" firstAttribute="top" secondItem="7uE-OQ-WGP" secondAttribute="top" constant="375" id="6dA-ZM-31S"/>
+                                    <constraint firstItem="8eb-GI-ov1" firstAttribute="top" secondItem="LU2-bU-C9B" secondAttribute="bottom" constant="20" id="mVz-6I-Pwi"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.019671445919999999" blue="0.45389821019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xWP-06-x14" firstAttribute="bottom" secondItem="7uE-OQ-WGP" secondAttribute="bottom" constant="100" id="Cud-b5-pyD"/>
+                            <constraint firstItem="7uE-OQ-WGP" firstAttribute="leading" secondItem="xWP-06-x14" secondAttribute="leading" constant="44" id="a1M-t6-eFm"/>
+                            <constraint firstItem="7uE-OQ-WGP" firstAttribute="centerX" secondItem="ppA-XA-l5L" secondAttribute="centerX" id="xHY-gh-ngB"/>
+                            <constraint firstItem="7uE-OQ-WGP" firstAttribute="top" secondItem="xWP-06-x14" secondAttribute="top" constant="15" id="yAM-Jl-mhQ"/>
+                            <constraint firstItem="xWP-06-x14" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="7uE-OQ-WGP" secondAttribute="bottom" constant="15" id="zVv-9b-3w0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="xWP-06-x14"/>
                     </view>
                     <navigationItem key="navigationItem" title="STATE" id="tFh-6M-0U4">
@@ -304,12 +360,12 @@
             <objects>
                 <viewController id="c1q-71-Td3" customClass="WebVC" customModule="Fifty_States" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Prs-ET-fVK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9g6-Vh-JgK">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
-                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" red="0.0" green="0.019671445919999999" blue="0.45389821019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -340,9 +396,13 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mvc-71-nII" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="75P-N0-RJ6">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.019671445919999999" blue="0.45389821019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -358,85 +418,381 @@
             <objects>
                 <viewController id="04x-is-HxH" customClass="MemoryGameVC" customModule="Fifty_States" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="78g-KQ-FGk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TSM-ZC-oi9">
-                                <rect key="frame" x="60" y="179" width="128" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.26834985613822937" green="0.27733594179153442" blue="0.28153231739997864" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="flipCard:" destination="04x-is-HxH" eventType="touchUpInside" id="oVZ-Ek-ZXY"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIC-8W-zeG">
-                                <rect key="frame" x="227" y="179" width="128" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.26834985613822937" green="0.27733594179153442" blue="0.28153231739997864" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="flipCard:" destination="04x-is-HxH" eventType="touchUpInside" id="2mv-4o-nnX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1B-aH-d9u">
-                                <rect key="frame" x="60" y="302" width="128" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.26834985613822937" green="0.27733594179153442" blue="0.28153231739997864" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="flipCard:" destination="04x-is-HxH" eventType="touchUpInside" id="dxl-Ju-6Vv"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eed-or-23f">
-                                <rect key="frame" x="227" y="302" width="128" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.26834985613822937" green="0.27733594179153442" blue="0.28153231739997864" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="flipCard:" destination="04x-is-HxH" eventType="touchUpInside" id="Kmz-mf-OfA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJg-yL-7kn">
-                                <rect key="frame" x="189" y="674" width="37" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="PEEK"/>
-                                <connections>
-                                    <action selector="peekAtCards:" destination="04x-is-HxH" eventType="touchDown" id="xYl-Ik-5Zm"/>
-                                    <action selector="stopPeeking:" destination="04x-is-HxH" eventType="touchUpInside" id="Jky-bo-Pdk"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9r6-x7-5ly">
-                                <rect key="frame" x="153" y="774" width="110" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Deal New Cards"/>
-                                <connections>
-                                    <action selector="dealNewCards:" destination="04x-is-HxH" eventType="touchUpInside" id="3R4-WV-v7Q"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="o3M-99-Ydo">
+                                <rect key="frame" x="0.0" y="69" width="320" height="494"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0pC-J5-zS5" userLabel="Cards Stack">
+                                        <rect key="frame" x="10" y="0.0" width="300" height="304"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2oE-Tp-r4d">
+                                                <rect key="frame" x="0.0" y="0.0" width="80.5" height="304"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWP-RW-K31" customClass="CardButton" customModule="Fifty_States" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80.5" height="42.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="pWP-RW-K31" secondAttribute="height" multiplier="135:71" id="OS6-8W-tvE"/>
+                                                        </constraints>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <connections>
+                                                            <action selector="flipCard:" destination="04x-is-HxH" eventType="touchUpInside" id="j53-pI-Bvu"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LrF-We-a68" customClass="CardButton" customModule="Fifty_States" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="52.5" width="80.5" height="42"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="LrF-We-a68" secondAttribute="height" multiplier="135:71" id="X7r-FS-UXH"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="flipCard:" destination="04x-is-HxH" eventType="touchUpInside" id="Ejw-bD-6Xv"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNM-Sh-EAC" customClass="CardButton" customModule="Fifty_States" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="104.5" width="80.5" height="42.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="BNM-Sh-EAC" secondAttribute="height" multiplier="135:71" id="n1V-SS-6JF"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="flipCard:" destination="04x-is-HxH" eventType="touchUpInside" id="HBW-gg-gdE"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IfP-qY-Pec" customClass="CardButton" customModule="Fifty_States" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="157" width="80.5" height="42.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="IfP-qY-Pec" secondAttribute="height" multiplier="135:71" id="zZ2-pw-tst"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="flipCard:" destination="04x-is-HxH" eventType="touchUpInside" id="FnX-Jj-Iq4"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WW9-b2-Vhs" customClass="CardButton" customModule="Fifty_States" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="209.5" width="80.5" height="42"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="WW9-b2-Vhs" secondAttribute="height" multiplier="135:71" id="aA2-Ea-wsm"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="flipCard:" destination="04x-is-HxH" eventType="touchUpInside" id="641-MI-cYp"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBV-Nr-Be9" customClass="CardButton" customModule="Fifty_States" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="261.5" width="80.5" height="42.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="fBV-Nr-Be9" secondAttribute="height" multiplier="135:71" id="n06-gc-T54"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="flipCard:" destination="04x-is-HxH" eventType="touchUpInside" id="lc7-h2-3E8"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="BNM-Sh-EAC" firstAttribute="width" secondItem="BNM-Sh-EAC" secondAttribute="height" multiplier="135:71" id="4EY-D9-kji"/>
+                                                    <constraint firstItem="IfP-qY-Pec" firstAttribute="width" secondItem="IfP-qY-Pec" secondAttribute="height" multiplier="135:71" id="DOy-Y1-FSa"/>
+                                                    <constraint firstItem="WW9-b2-Vhs" firstAttribute="width" secondItem="WW9-b2-Vhs" secondAttribute="height" multiplier="135:71" id="KvE-dV-EFr"/>
+                                                    <constraint firstItem="LrF-We-a68" firstAttribute="width" secondItem="LrF-We-a68" secondAttribute="height" multiplier="135:71" id="ODe-ps-iOy"/>
+                                                    <constraint firstItem="IfP-qY-Pec" firstAttribute="width" secondItem="IfP-qY-Pec" secondAttribute="height" multiplier="135:71" id="dnZ-Is-Eeq"/>
+                                                    <constraint firstItem="fBV-Nr-Be9" firstAttribute="width" secondItem="fBV-Nr-Be9" secondAttribute="height" multiplier="135:71" id="gZw-xn-tT0"/>
+                                                    <constraint firstItem="WW9-b2-Vhs" firstAttribute="width" secondItem="WW9-b2-Vhs" secondAttribute="height" multiplier="135:71" id="hXT-u9-lWc"/>
+                                                    <constraint firstItem="fBV-Nr-Be9" firstAttribute="width" secondItem="fBV-Nr-Be9" secondAttribute="height" multiplier="135:71" id="haf-dt-Ff4"/>
+                                                    <constraint firstItem="WW9-b2-Vhs" firstAttribute="width" secondItem="WW9-b2-Vhs" secondAttribute="height" multiplier="135:71" id="kHE-Ju-A3e"/>
+                                                    <constraint firstItem="fBV-Nr-Be9" firstAttribute="width" secondItem="fBV-Nr-Be9" secondAttribute="height" multiplier="135:71" id="oBy-nd-bIq"/>
+                                                    <constraint firstItem="fBV-Nr-Be9" firstAttribute="width" secondItem="fBV-Nr-Be9" secondAttribute="height" multiplier="135:71" id="qcU-Wv-RTr"/>
+                                                    <constraint firstItem="BNM-Sh-EAC" firstAttribute="width" secondItem="BNM-Sh-EAC" secondAttribute="height" multiplier="135:71" id="urz-3J-NnU"/>
+                                                    <constraint firstItem="WW9-b2-Vhs" firstAttribute="width" secondItem="WW9-b2-Vhs" secondAttribute="height" multiplier="135:71" id="w62-Lh-E4c"/>
+                                                    <constraint firstItem="IfP-qY-Pec" firstAttribute="width" secondItem="IfP-qY-Pec" secondAttribute="height" multiplier="135:71" id="w8d-Og-NvU"/>
+                                                    <constraint firstItem="fBV-Nr-Be9" firstAttribute="width" secondItem="fBV-Nr-Be9" secondAttribute="height" multiplier="135:71" id="y6M-eM-MN9"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YPg-dL-gfW">
+                                                <rect key="frame" x="90.5" y="0.0" width="80.5" height="304"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNi-fv-l3C" customClass="CardButton" customModule="Fifty_States" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80.5" height="42.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="eNi-fv-l3C" secondAttribute="height" multiplier="135:71" id="5cA-R0-IBF"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="flipCard:" destination="04x-is-HxH" eventType="touchUpInside" id="enL-AM-S43"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4a-16-xP0" customClass="CardButton" customModule="Fifty_States" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="52.5" width="80.5" height="42"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="L4a-16-xP0" secondAttribute="height" multiplier="135:71" id="F82-J7-gq5"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="flipCard:" destination="04x-is-HxH" eventType="touchUpInside" id="KtB-5W-k1v"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Vy-q9-gCY" customClass="CardButton" customModule="Fifty_States" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="104.5" width="80.5" height="42.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="5Vy-q9-gCY" secondAttribute="height" multiplier="135:71" id="ajA-RT-DLc"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="flipCard:" destination="04x-is-HxH" eventType="touchUpInside" id="kXJ-tQ-0kq"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1IC-uP-nN6" customClass="CardButton" customModule="Fifty_States" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="157" width="80.5" height="42.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="1IC-uP-nN6" secondAttribute="height" multiplier="135:71" id="Dv0-SZ-uDd"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="flipCard:" destination="04x-is-HxH" eventType="touchUpInside" id="q6s-Mh-Wbj"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ed0-2h-Hrq" customClass="CardButton" customModule="Fifty_States" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="209.5" width="80.5" height="42"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="ed0-2h-Hrq" secondAttribute="height" multiplier="135:71" id="jsg-g2-RZV"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="flipCard:" destination="04x-is-HxH" eventType="touchUpInside" id="bKV-yH-tDy"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fk7-mP-8lN" customClass="CardButton" customModule="Fifty_States" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="261.5" width="80.5" height="42.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="fk7-mP-8lN" secondAttribute="height" multiplier="135:71" id="4Dx-v3-wL8"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="flipCard:" destination="04x-is-HxH" eventType="touchUpInside" id="wOf-Qi-euk"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="1IC-uP-nN6" firstAttribute="width" secondItem="1IC-uP-nN6" secondAttribute="height" multiplier="135:71" id="3Sb-Nk-suO"/>
+                                                    <constraint firstItem="fk7-mP-8lN" firstAttribute="width" secondItem="fk7-mP-8lN" secondAttribute="height" multiplier="135:71" id="9ov-X7-wnX"/>
+                                                    <constraint firstItem="ed0-2h-Hrq" firstAttribute="width" secondItem="ed0-2h-Hrq" secondAttribute="height" multiplier="135:71" id="C4U-Da-I1B"/>
+                                                    <constraint firstItem="fk7-mP-8lN" firstAttribute="width" secondItem="fk7-mP-8lN" secondAttribute="height" multiplier="135:71" id="G0C-ws-3tR"/>
+                                                    <constraint firstItem="L4a-16-xP0" firstAttribute="width" secondItem="L4a-16-xP0" secondAttribute="height" multiplier="135:71" id="I2x-q2-ifz"/>
+                                                    <constraint firstItem="fk7-mP-8lN" firstAttribute="width" secondItem="fk7-mP-8lN" secondAttribute="height" multiplier="135:71" id="M6v-Tr-9ii"/>
+                                                    <constraint firstItem="5Vy-q9-gCY" firstAttribute="width" secondItem="5Vy-q9-gCY" secondAttribute="height" multiplier="135:71" id="Nsn-aX-8uc"/>
+                                                    <constraint firstItem="fk7-mP-8lN" firstAttribute="width" secondItem="fk7-mP-8lN" secondAttribute="height" multiplier="135:71" id="YCt-ga-P1j"/>
+                                                    <constraint firstItem="fk7-mP-8lN" firstAttribute="width" secondItem="fk7-mP-8lN" secondAttribute="height" multiplier="135:71" id="bPT-ks-YE1"/>
+                                                    <constraint firstItem="1IC-uP-nN6" firstAttribute="width" secondItem="1IC-uP-nN6" secondAttribute="height" multiplier="135:71" id="gyB-Ga-uBo"/>
+                                                    <constraint firstItem="1IC-uP-nN6" firstAttribute="width" secondItem="1IC-uP-nN6" secondAttribute="height" multiplier="135:71" id="lfl-S2-UuW"/>
+                                                    <constraint firstItem="ed0-2h-Hrq" firstAttribute="width" secondItem="ed0-2h-Hrq" secondAttribute="height" multiplier="135:71" id="otT-K5-yny"/>
+                                                    <constraint firstItem="ed0-2h-Hrq" firstAttribute="width" secondItem="ed0-2h-Hrq" secondAttribute="height" multiplier="135:71" id="vCO-2L-n8i"/>
+                                                    <constraint firstItem="5Vy-q9-gCY" firstAttribute="width" secondItem="5Vy-q9-gCY" secondAttribute="height" multiplier="135:71" id="yfR-H3-bbK"/>
+                                                    <constraint firstItem="ed0-2h-Hrq" firstAttribute="width" secondItem="ed0-2h-Hrq" secondAttribute="height" multiplier="135:71" id="zKl-f1-KfW"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Dek-EO-b0J">
+                                                <rect key="frame" x="181" y="0.0" width="119" height="304"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELh-MH-M3W" customClass="CardButton" customModule="Fifty_States" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="119" height="62.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="ELh-MH-M3W" secondAttribute="height" multiplier="135:71" id="bjX-f1-OrZ"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="flipCard:" destination="04x-is-HxH" eventType="touchUpInside" id="HMz-2X-4Gb"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NdG-oU-DbD" customClass="CardButton" customModule="Fifty_States" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="72.5" width="119" height="0.0"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="NdG-oU-DbD" secondAttribute="height" multiplier="135:71" id="WPB-Jv-0fK"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="flipCard:" destination="04x-is-HxH" eventType="touchUpInside" id="wJY-D3-BAr"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3o-Sj-hyH" customClass="CardButton" customModule="Fifty_States" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="82.5" width="119" height="62.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="y3o-Sj-hyH" secondAttribute="height" multiplier="135:71" id="8Lc-dl-Lo9"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="flipCard:" destination="04x-is-HxH" eventType="touchUpInside" id="Cih-vC-vlL"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nsd-aE-dnn" customClass="CardButton" customModule="Fifty_States" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="155" width="119" height="4"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Nsd-aE-dnn" secondAttribute="height" multiplier="135:71" id="YXm-qB-xhW"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="flipCard:" destination="04x-is-HxH" eventType="touchUpInside" id="jXb-wG-OFM"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZfF-Qa-h9d" customClass="CardButton" customModule="Fifty_States" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="169" width="119" height="62.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="ZfF-Qa-h9d" secondAttribute="height" multiplier="135:71" id="bOW-xI-18n"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="flipCard:" destination="04x-is-HxH" eventType="touchUpInside" id="tmM-PP-TxR"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELU-Pq-zsi" customClass="CardButton" customModule="Fifty_States" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="241.5" width="119" height="62.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="ELU-Pq-zsi" secondAttribute="height" multiplier="135:71" id="u57-tX-ygU"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="flipCard:" destination="04x-is-HxH" eventType="touchUpInside" id="bhs-O9-Ool"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="ZfF-Qa-h9d" firstAttribute="width" secondItem="ZfF-Qa-h9d" secondAttribute="height" multiplier="135:71" id="0wd-vf-Yab"/>
+                                                    <constraint firstItem="ELU-Pq-zsi" firstAttribute="width" secondItem="ELU-Pq-zsi" secondAttribute="height" multiplier="135:71" id="8FE-dS-tZx"/>
+                                                    <constraint firstItem="ELU-Pq-zsi" firstAttribute="width" secondItem="ELU-Pq-zsi" secondAttribute="height" multiplier="135:71" id="9Tl-oM-pt4"/>
+                                                    <constraint firstItem="ZfF-Qa-h9d" firstAttribute="width" secondItem="ZfF-Qa-h9d" secondAttribute="height" multiplier="135:71" id="B2a-x5-KTn"/>
+                                                    <constraint firstItem="Nsd-aE-dnn" firstAttribute="width" secondItem="Nsd-aE-dnn" secondAttribute="height" multiplier="135:71" id="HcC-XD-bqb"/>
+                                                    <constraint firstItem="NdG-oU-DbD" firstAttribute="width" secondItem="NdG-oU-DbD" secondAttribute="height" multiplier="135:71" id="PHb-9Z-U8l"/>
+                                                    <constraint firstItem="ZfF-Qa-h9d" firstAttribute="width" secondItem="ZfF-Qa-h9d" secondAttribute="height" multiplier="135:71" id="QjS-XE-0pL"/>
+                                                    <constraint firstItem="Nsd-aE-dnn" firstAttribute="width" secondItem="Nsd-aE-dnn" secondAttribute="height" multiplier="135:71" id="YVE-Yf-I4s"/>
+                                                    <constraint firstItem="ELU-Pq-zsi" firstAttribute="width" secondItem="ELU-Pq-zsi" secondAttribute="height" multiplier="135:71" id="ZMa-le-FJH"/>
+                                                    <constraint firstItem="ZfF-Qa-h9d" firstAttribute="width" secondItem="ZfF-Qa-h9d" secondAttribute="height" multiplier="135:71" id="f7d-Td-GLd"/>
+                                                    <constraint firstItem="ELU-Pq-zsi" firstAttribute="width" secondItem="ELU-Pq-zsi" secondAttribute="height" multiplier="135:71" id="hwu-v1-Zz0"/>
+                                                    <constraint firstItem="y3o-Sj-hyH" firstAttribute="width" secondItem="y3o-Sj-hyH" secondAttribute="height" multiplier="135:71" id="iPe-dE-iej"/>
+                                                    <constraint firstItem="y3o-Sj-hyH" firstAttribute="width" secondItem="y3o-Sj-hyH" secondAttribute="height" multiplier="135:71" id="ko4-g4-dQQ"/>
+                                                    <constraint firstItem="ELU-Pq-zsi" firstAttribute="width" secondItem="ELU-Pq-zsi" secondAttribute="height" multiplier="135:71" id="sKl-ai-SOk"/>
+                                                    <constraint firstItem="Nsd-aE-dnn" firstAttribute="width" secondItem="Nsd-aE-dnn" secondAttribute="height" multiplier="135:71" id="uqn-xn-fag"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJg-yL-7kn" customClass="SubmitButton" customModule="Fifty_States" customModuleProvider="target">
+                                        <rect key="frame" x="131.5" y="314" width="57" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="euG-QL-D3j"/>
+                                        </constraints>
+                                        <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                        <state key="normal" title="PEEK"/>
+                                        <connections>
+                                            <action selector="hideAllCards:" destination="04x-is-HxH" eventType="touchUpInside" id="Jky-bo-Pdk"/>
+                                            <action selector="showAllCards:" destination="04x-is-HxH" eventType="touchDown" id="xYl-Ik-5Zm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9r6-x7-5ly" customClass="SubmitButton" customModule="Fifty_States" customModuleProvider="target">
+                                        <rect key="frame" x="95" y="364" width="130" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="PGt-Iq-TmT"/>
+                                        </constraints>
+                                        <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                        <state key="normal" title="Deal New Cards"/>
+                                        <connections>
+                                            <action selector="dealNewCards:" destination="04x-is-HxH" eventType="touchUpInside" id="3R4-WV-v7Q"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="107" translatesAutoresizingMaskIntoConstraints="NO" id="V7I-7Z-LBQ" userLabel="StateLabelStack">
+                                        <rect key="frame" x="10" y="414" width="300" height="70"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bRl-C7-Rlu">
+                                                <rect key="frame" x="0.0" y="8" width="96.5" height="54"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CARD A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyt-Xa-La3">
+                                                        <rect key="frame" x="21" y="0.0" width="54.5" height="18"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="61e-vp-ZqD">
+                                                        <rect key="frame" x="8" y="18" width="80.5" height="36"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jUi-LK-RFE">
+                                                <rect key="frame" x="203.5" y="8" width="96.5" height="54"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CARD B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhP-qZ-8IT">
+                                                        <rect key="frame" x="21.5" y="0.0" width="54" height="18"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0FS-X6-fuv">
+                                                        <rect key="frame" x="6" y="18" width="85" height="36"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="08e-Ig-LIY"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turns: 00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAT-CO-Hw0">
+                                        <rect key="frame" x="99" y="494" width="122.5" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="0pC-J5-zS5" firstAttribute="leading" secondItem="o3M-99-Ydo" secondAttribute="leading" constant="10" id="NSa-LD-5eG"/>
+                                    <constraint firstAttribute="trailing" secondItem="0pC-J5-zS5" secondAttribute="trailing" constant="10" id="XaS-cM-dFe"/>
+                                    <constraint firstAttribute="trailing" secondItem="V7I-7Z-LBQ" secondAttribute="trailing" constant="10" id="bfr-jm-Cd0"/>
+                                    <constraint firstItem="V7I-7Z-LBQ" firstAttribute="leading" secondItem="o3M-99-Ydo" secondAttribute="leading" constant="10" id="mWK-oP-L4c"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.26834985610000001" green="0.27733594179999999" blue="0.28153231740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.019671445919999999" blue="0.45389821019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="o3M-99-Ydo" firstAttribute="leading" secondItem="GXF-eK-WL8" secondAttribute="leading" id="2R6-qy-DSK"/>
+                            <constraint firstItem="GXF-eK-WL8" firstAttribute="bottom" secondItem="o3M-99-Ydo" secondAttribute="bottom" constant="5" id="Kem-mi-SIf"/>
+                            <constraint firstItem="GXF-eK-WL8" firstAttribute="trailing" secondItem="o3M-99-Ydo" secondAttribute="trailing" id="TSt-xw-CbF"/>
+                            <constraint firstItem="o3M-99-Ydo" firstAttribute="top" secondItem="GXF-eK-WL8" secondAttribute="top" constant="5" id="b9h-69-jPY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="GXF-eK-WL8"/>
                     </view>
                     <navigationItem key="navigationItem" title="Memory" id="wsk-zK-mSt"/>
                     <connections>
-                        <outletCollection property="cardButtons" destination="TSM-ZC-oi9" collectionClass="NSMutableArray" id="IHl-AH-K1F"/>
-                        <outletCollection property="cardButtons" destination="cIC-8W-zeG" collectionClass="NSMutableArray" id="Q8U-tj-gSM"/>
-                        <outletCollection property="cardButtons" destination="S1B-aH-d9u" collectionClass="NSMutableArray" id="LuT-Bu-L8a"/>
-                        <outletCollection property="cardButtons" destination="Eed-or-23f" collectionClass="NSMutableArray" id="fsu-iL-fRQ"/>
+                        <outlet property="firstStateLabel" destination="61e-vp-ZqD" id="ct3-Yn-Sz1"/>
+                        <outlet property="secondStateLabel" destination="0FS-X6-fuv" id="2D5-3E-0Sx"/>
+                        <outlet property="turnCounterLabel" destination="bAT-CO-Hw0" id="s0c-Sb-mtw"/>
+                        <outletCollection property="cardButtons" destination="BNM-Sh-EAC" collectionClass="NSMutableArray" id="cdI-HD-FVY"/>
+                        <outletCollection property="cardButtons" destination="5Vy-q9-gCY" collectionClass="NSMutableArray" id="fct-Uq-cPr"/>
+                        <outletCollection property="cardButtons" destination="IfP-qY-Pec" collectionClass="NSMutableArray" id="Iml-XD-wAY"/>
+                        <outletCollection property="cardButtons" destination="Nsd-aE-dnn" collectionClass="NSMutableArray" id="i14-ad-kqc"/>
+                        <outletCollection property="cardButtons" destination="ELU-Pq-zsi" collectionClass="NSMutableArray" id="1DY-Wh-4sO"/>
+                        <outletCollection property="cardButtons" destination="LrF-We-a68" collectionClass="NSMutableArray" id="hc0-1b-dfZ"/>
+                        <outletCollection property="cardButtons" destination="1IC-uP-nN6" collectionClass="NSMutableArray" id="nIs-G7-R5U"/>
+                        <outletCollection property="cardButtons" destination="ELh-MH-M3W" collectionClass="NSMutableArray" id="Y3l-cp-hI7"/>
+                        <outletCollection property="cardButtons" destination="eNi-fv-l3C" collectionClass="NSMutableArray" id="hXv-2k-aIY"/>
+                        <outletCollection property="cardButtons" destination="WW9-b2-Vhs" collectionClass="NSMutableArray" id="4IJ-hH-B77"/>
+                        <outletCollection property="cardButtons" destination="fk7-mP-8lN" collectionClass="NSMutableArray" id="YYz-Id-hYt"/>
+                        <outletCollection property="cardButtons" destination="NdG-oU-DbD" collectionClass="NSMutableArray" id="raA-xk-w0q"/>
+                        <outletCollection property="cardButtons" destination="L4a-16-xP0" collectionClass="NSMutableArray" id="HOP-2g-MhT"/>
+                        <outletCollection property="cardButtons" destination="y3o-Sj-hyH" collectionClass="NSMutableArray" id="Guk-9B-0D9"/>
+                        <outletCollection property="cardButtons" destination="ed0-2h-Hrq" collectionClass="NSMutableArray" id="tE3-eo-SVn"/>
+                        <outletCollection property="cardButtons" destination="ZfF-Qa-h9d" collectionClass="NSMutableArray" id="RGL-uh-vZa"/>
+                        <outletCollection property="cardButtons" destination="pWP-RW-K31" collectionClass="NSMutableArray" id="ITk-uO-J6t"/>
+                        <outletCollection property="cardButtons" destination="fBV-Nr-Be9" collectionClass="NSMutableArray" id="53P-i6-PHt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ldh-2T-bLR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="953.57142857142856"/>
+            <point key="canvasLocation" x="1047.8260869565217" y="874.55357142857144"/>
         </scene>
     </scenes>
     <resources>

@@ -9,12 +9,13 @@
 import UIKit
 
 class StatesListTableVC: UITableViewController {
-    
+
     let cellIdentifier = "StateCell"
     var stateSelected = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -22,8 +23,11 @@ class StatesListTableVC: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
-        cell.textLabel?.text = stateDetails[indexPath.row].abbreviation
+        let cell: StateTableCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! StateTableCell
+        cell.cellLabel?.textColor = .white
+        
+        cell.cellLabel.text = stateDetails[indexPath.row].name
+        cell.flagImage.image = UIImage(named: stateDetails[indexPath.row].name)
         return cell
     }
 

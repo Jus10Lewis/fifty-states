@@ -58,5 +58,6 @@ var stateDetails = [
     (abbreviation: "WA", name: "Washington", capital: "Olympia", bird: "Willow Goldfinch", flower: "Coast Rhododendron"),
     (abbreviation: "WI", name: "Wisconsin", capital: "Madison", bird: "American Robin", flower: "Violet"),
     (abbreviation: "WV", name: "West Virginia", capital: "Charleston", bird: "Northern Cardinal", flower: "Rhododendron"),
-    (abbreviation: "WY", name: "Wyoming", capital: "Cheyenne", bird: "Western Meadowlark", flower: "Indian Paintbrush")]
+    (abbreviation: "WY", name: "Wyoming", capital: "Cheyenne", bird: "Western Meadowlark", flower: "Indian Paintbrush")
+]
 

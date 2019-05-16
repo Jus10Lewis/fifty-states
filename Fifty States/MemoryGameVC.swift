@@ -7,66 +7,100 @@
 //
 
 import UIKit
+import AVFoundation
+
+//FIXME: AUTOLAYOUT
+//FIXME: Matched cards are still selectable
+//FIXME: if cards matched delay, unless the user wants to quickly move on and tap a new card
+//FIXME: StateNameLabels are not clearing out
+
 
 class MemoryGameVC: UIViewController {
 
     @IBOutlet var cardButtons: [UIButton]!
-    
-    var currentStates = [Int]()
+    @IBOutlet weak var turnCounterLabel: UILabel!
+    @IBOutlet weak var firstStateLabel: UILabel!
+    @IBOutlet weak var secondStateLabel: UILabel!
+
+    var game: MemoryGame!
+    var gameIsPausedForDelay = false
     
     //MARK:- Overrides
     override func viewDidLoad() {
         super.viewDidLoad()
+        game = MemoryGame(numberOfCards: cardButtons.count)
         setButtonTags()
-        dealNewCards(self)
-        stopPeeking(self)
+        showAllCards(self)
+        afterDelay(1.0) {
+            self.hideAllCards(self)
+        }
+        updateTurnCountLabel()
+        clearStatenameLabels()
     }
-    
     
     //MARK:- Actions
     @IBAction func flipCard(_ sender: UIButton) {
-        let thisStateIndex = currentStates[sender.tag]
-        let thisStateName = stateDetails[thisStateIndex].name  // get the name of each state
-        let tempImage = UIImage(named: thisStateName)
         
-        sender.setBackgroundImage(tempImage, for: .normal)
+        if gameIsPausedForDelay {return}//Prevents selecting more that 2 cards quickly before they face down "afterdelay"
         
-//        var thisButton: UIButton {
-//            for button in cardButtons {
-//                if button == sender {
-//                    return button
-//                }
-//            }
-//            return cardButtons[0]
-//        }
-//        thisButton.setBackgroundImage(tempImage, for: .normal)
-    }
-
-    @IBAction func peekAtCards(_ sender: Any) {
-        for (cardNumber, stateIndex) in currentStates.enumerated() { //loop through the chosen states
-            let thisStateName = stateDetails[stateIndex].name  // get the name of each state
-            let thisStateImage = UIImage(named: thisStateName)  //get the flag image for that name
-            cardButtons[cardNumber].setBackgroundImage(thisStateImage, for: .normal) //put the flag on the appropriate button
+        if game.firstCardIndexSelected != nil, game.firstCardIndexSelected == sender.tag {
+            //prevent user from selecting same card twice
+            return
+        }
+        
+        //update displays
+        updateTurnCountLabel()
+        let stateName = game.getStateNameFromCard(withIndex: sender.tag)
+        let flagImage = UIImage(named: stateName)
+        sender.setBackgroundImage(flagImage, for: .normal)
+        
+        playSound("card-flip")
+        
+        //Tell game model to check the selected card
+        let didMatchCards = game.checkForMatch(cardNumber: sender.tag)
+        
+        
+        //AFTER checkForMatch is called firstCardIndexSelected would have a value if this is the first card, or nil after comparing the second card.
+        //if this was the second card in a turn...
+        if game.firstCardIndexSelected == nil {
+            secondStateLabel.text = stateName
+            if didMatchCards {
+                self.hideUnmatchedCards()
+                self.clearStatenameLabels()
+            } else {
+                gameIsPausedForDelay = true
+                afterDelay(1.0) {
+                    self.gameIsPausedForDelay = false
+                    self.hideUnmatchedCards()
+                    self.clearStatenameLabels()
+                }
+            }
+        } else {
+            firstStateLabel.text = stateName
+        }
+        if game.isOver {
+            playSound("win")
         }
     }
     
-    @IBAction func stopPeeking(_ sender: Any) {
-        let cardBackImage = UIImage(named: "USAcardback")
-        for card in cardButtons {
-            card.setBackgroundImage(cardBackImage, for: .normal)
+
+    @IBAction func showAllCards(_ sender: Any) {
+        for (cardNumber, cardButton) in cardButtons.enumerated() { //loop through the chosen states
+            let stateName = game.getStateNameFromCard(withIndex: cardNumber)
+            let flagImage = UIImage(named: stateName)
+            cardButton.setBackgroundImage(flagImage, for: .normal)
         }
+    }
+    
+    @IBAction func hideAllCards(_ sender: Any) {
+        hideUnmatchedCards()
     }
     
     
     @IBAction func dealNewCards(_ sender: Any) {
-        currentStates = []
-        for _ in 0..<cardButtons.count {
-            var randStateID = 0
-            repeat{
-                randStateID = Int.random(in: 0...49)
-            } while currentStates.contains(randStateID)
-            currentStates.append(randStateID)
-        }
+        game.dealNewCards(numberOfCards: cardButtons.count)
+        hideUnmatchedCards()
+        updateTurnCountLabel()
     }
     
     //MARK:- My Methods
@@ -76,7 +110,25 @@ class MemoryGameVC: UIViewController {
         }
     }
     
+    func hideUnmatchedCards() {
+        let cardBackImage = UIImage(named: "cardback")
+        for button in cardButtons {
+            if button.tag == game.firstCardIndexSelected {
+                continue
+            }
+            if !game.cards[button.tag].isMatched {
+                button.setBackgroundImage(cardBackImage, for: .normal)
+            }
+        }
+    }
     
+    func clearStatenameLabels() {
+        firstStateLabel.text = ""
+        secondStateLabel.text = ""
+    }
     
+    func updateTurnCountLabel() {
+        turnCounterLabel.text = "Turns: \(game.turnCount)"
+    }
 
 }
